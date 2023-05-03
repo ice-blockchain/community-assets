@@ -1,0 +1,953 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+@font-face {
+    font-family: "Euclid Circular B";
+    src: url("/fonts/Euclid Circular B Regular.ttf");
+}
+
+@font-face {
+    font-family: "Coco-Sharp-Bold-trial";
+    src: url("/fonts/Coco-Sharp-Bold-trial.ttf");
+}
+
+@font-face {
+    font-family: "CocoSharp-trial";
+    src: url("/fonts/Coco-Sharp-Regular-trial.ttf");
+}
+
+@font-face {
+    font-family: "Euclid Circular Light";
+    src: url("/fonts/Euclid Circular B Light.ttf");
+}
+
+@font-face {
+    font-family: "Euclid Circular Bold";
+    src: url("/fonts/Euclid Circular B Medium.ttf");
+}
+/*desktop*/
+
+a {
+    text-decoration: none;
+}
+
+.overlay-com {
+    background: rgba(64, 93, 134, 60%);
+    align-items: flex-start;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+.overlay-com.show {
+    animation: overlayIn 0.3s ease-in-out 0.1s forwards;
+    display: inline-block;
+}
+
+.overlay-com.ice-join .close-button {
+    float: left;
+    position: absolute;
+    background-image: url("/images/close-icon.png");
+    width: 12px;
+    height: 12px;
+    top: 27px;
+    right: 36px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.overlay-com.ice-join .inner {
+    display: flex;
+    width: 80%;
+    max-width: 1183px !important;
+    padding: 0px !important;
+    margin: 3.6rem auto;
+    background: rgb(43, 91, 227) !important;
+    background: linear-gradient(
+            103deg,
+            rgba(43, 91, 227, 1) 0%,
+            rgba(20, 57, 165, 1) 76%,
+            rgba(20, 57, 165, 1) 76%,
+            rgba(255, 255, 255, 1) 76.1%
+    ) !important;
+    position: relative;
+    border-radius: 6px;
+    animation: overlayInnerIn 0.3s ease-in-out 0.1s forwards;
+}
+
+.overlay-com.ice-join .inner .looper-bg {
+    float: left;
+    position: absolute;
+    background-image: url(/images/looper-bg.png);
+    background-position: -40px -65px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.4;
+}
+
+.overlay-com.ice-join .inner .inner-bg {
+    float: left;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    padding: 53px 80px 53px 104px;
+    z-index: 2;
+}
+
+.overlay-com.ice-join .inner .inner-bg .modal-info {
+    float: left;
+    position: relative;
+    width: 65%;
+    padding-top: 69px;
+    z-index: 2;
+}
+
+.overlay-com.ice-join .inner .inner-bg .modal-info .logos {
+    font-family: "Coco-Sharp-Bold-trial";
+    font-size: 42px;
+    line-height: 50px;
+    font-weight: 400;
+}
+
+/*.overlay-com.ice-join
+.inner
+.inner-bg
+.modal-info
+.logos
+div:nth-child(2) {
+    display: flex;
+    font-family: "Coco-Sharp-Bold-trial";
+    font-size: 42px;
+    line-height: 50px;
+    font-weight: 400;
+    padding: 0px 32px;
+}*/
+
+.overlay-com.ice-join .inner .inner-bg .modal-info .logos .ice-logo {
+    color: #fff;
+    font-size: 42px;
+    font-weight: 800;
+    font-family: "Coco-Sharp-Bold-trial";
+    letter-spacing: 0.02em;
+}
+
+.overlay-com.ice-join .inner .inner-bg .modal-info .logos .ice-logo i {
+    background-image: url("/images/ice-logo.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 65px;
+    width: 65px;
+    display: inline-block;
+    margin-bottom: -20px;
+}
+
+.overlay-com.ice-join .inner .inner-bg .modal-info .logos .brand-logo {
+    height: 65px;
+    margin-bottom: -20px;
+}
+
+.overlay-com.ice-join .inner .inner-bg .modal-info p {
+    padding: 0px;
+    margin: 0px;
+    color: #fff;
+    font-family: "Euclid Circular Light";
+    font-weight: 400;
+    font-size: 17.5384px;
+    line-height: 26px;
+    letter-spacing: 0.01em;
+    max-width: 421px;
+}
+
+.overlay-com.ice-join .inner .inner-bg .modal-info .base-info {
+    display: flex;
+    flex-direction: column;
+    padding: 52px 0px 64px;
+    max-width: 505px;
+}
+
+.overlay-com.ice-join .inner .inner-bg .modal-info .base-info h3 {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 29px;
+    padding: 0px 0px 17px;
+    margin: 0px;
+    font-family: "Lato", sans-serif;
+    letter-spacing: 0.01em;
+}
+
+.overlay-com.ice-join .inner .inner-bg .modal-info .base-info h3 span {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.overlay-com.ice-join .inner .inner-bg .modal-info .base-info h3 i {
+    padding-right: 10px;
+}
+
+.overlay-com.ice-join .inner .inner-bg .modal-info .base-info h3 .ice-logo-inline {
+    background-image: url("/images/ice-logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    margin-bottom: -5px;
+}
+
+.overlay-com.ice-join .inner .inner-bg .modal-info .signup-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.overlay-com.ice-join .inner .inner-bg .modal-info .signup-info h4 {
+    display: flex;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 0px 0px 6px;
+    margin: 0px;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+}
+
+.overlay-com.ice-join .inner .inner-bg .modal-info .signup-info h3 {
+    font-size: 27px;
+    line-height: 32px;
+    padding: 0px 0px 17px;
+    margin: 0px;
+    font-family: "Lato", sans-serif;
+    font-weight: 800;
+    letter-spacing: 0.01em;
+}
+
+.overlay-com.ice-join
+.inner
+.inner-bg
+.modal-info
+.signup-info
+h3
+.ice-logo-inline {
+    background-image: url("/images/ice-logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    margin-bottom: -4px;
+}
+
+.overlay-com.ice-join .inner .inner-bg .modal-info .signup-info h3 span {
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.01em;
+}
+
+.overlay-com.ice-join .inner .inner-bg .modal-info .signup-info .coupon {
+    display: flex;
+    flex-direction: column;
+}
+
+.overlay-com.ice-join
+.inner
+.inner-bg
+.modal-info
+.signup-info
+.coupon
+.coupon-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.overlay-com.ice-join
+.inner
+.inner-bg
+.modal-info
+.signup-info
+.coupon
+.coupon-info
+.coupon-input {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    max-width: 316px;
+    padding: 12px 19px;
+    background-color: #ffffff;
+    border-radius: 8.77px;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 7px;
+    cursor: pointer;
+}
+
+.overlay-com.ice-join
+.inner
+.inner-bg
+.modal-info
+.signup-info
+.coupon
+.coupon-info
+.coupon-input
+.coupon-text {
+    color: #0a2155;
+    font-family: "Lato", sans-serif;
+    font-size: 17px;
+    line-height: 22px;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+}
+
+.overlay-com.ice-join
+.inner
+.inner-bg
+.modal-info
+.signup-info
+.coupon
+.coupon-info
+.coupon-input
+.icon-tooltip
+.icon-copy {
+    display: inline-block;
+    width: 12px;
+    height: 16px;
+    background-image: url("/images/copy-icon.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.overlay-com.ice-join
+.inner
+.inner-bg
+.modal-info
+.signup-info
+.coupon
+.coupon-info
+.coupon-input
+.icon-tooltip {
+    display: flex;
+    cursor: pointer;
+}
+
+.overlay-com.ice-join
+.inner
+.inner-bg
+.modal-info
+.signup-info
+.coupon
+.coupon-info
+.coupon-input
+.icon-tooltip
+span {
+    display: inline-block;
+    color: #535353;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Lato", sans-serif;
+    padding-right: 9px;
+}
+
+.overlay-com.ice-join
+.inner
+.inner-bg
+.modal-info
+.signup-info
+.coupon
+.coupon-support {
+    font-family: "Euclid Circular Light";
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 13.95px;
+    color: #ffffff;
+    padding-top: 13px;
+    letter-spacing: 0.01em;
+    background-image: url("/images/hand-icon.png");
+    background-repeat: no-repeat;
+    background-position: 0px 8px;
+    padding-left: 23px;
+    background-size: 18px 18px;
+}
+
+.overlay-com.ice-join .inner .inner-bg .modal-info .buttons-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 58px;
+}
+
+.overlay-com.ice-join
+.inner
+.inner-bg
+.modal-info
+.buttons-list
+.button-more {
+    display: flex;
+    padding: 13px 0px;
+    color: #ffffff;
+    background-color: #0a2155;
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17.75px;
+    border-radius: 7px;
+    margin-right: 19px;
+    letter-spacing: 0.01rem;
+    width: 157px;
+    max-width: 157px;
+    justify-content: center;
+}
+
+.overlay-com.ice-join
+.inner
+.inner-bg
+.modal-info
+.buttons-list
+.button-whitepaper {
+    display: flex;
+    padding: 13px 0px;
+    color: #0a2155;
+    background-color: #ffffff;
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17.75px;
+    border-radius: 7px;
+    letter-spacing: 0.01rem;
+    width: 157px;
+    max-width: 157px;
+    justify-content: center;
+}
+
+.overlay-com.ice-join .inner .inner-bg .app-info {
+    float: right;
+    position: relative;
+    width: 35%;
+    padding-top: 19px;
+    z-index: 1;
+    max-width: 280px;
+}
+
+.overlay-com.ice-join .inner .inner-bg .app-info .app-mockup img {
+    width: 100%;
+    max-width: 280px;
+}
+
+.overlay-com.ice-join .inner .inner-bg .app-info .app-links {
+    display: flex;
+    flex-direction: row;
+    padding-top: 15px;
+    justify-content: center;
+}
+
+.overlay-com.ice-join .inner .inner-bg .app-info .app-links .appstore {
+    display: flex;
+    background-image: url("/images/appstore-logo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 120px;
+    height: 40px;
+    margin-right: 18px;
+}
+
+.overlay-com.ice-join .inner .inner-bg .app-info .app-links .googleplay {
+    display: flex;
+    background-image: url("/images/google-play-logo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 120px;
+    height: 40px;
+}
+
+body.overlay-on {
+    overflow-y: hidden;
+}
+
+/*mobile*/
+.overlay-com.ice-join .inner.mobile {
+    display: none;
+    width: 100%;
+    max-width: 1183px !important;
+    padding: 0px !important;
+    flex-direction: column;
+    margin: 0px;
+    background: linear-gradient(169.59deg, #2B5BE3 8.62%, #1338A2 98.1%) !important;
+    position: relative;
+    border-radius: 6px;
+    animation: overlayInnerIn 0.3s ease-in-out 0.1s forwards;
+}
+
+.overlay-com.ice-join .inner.mobile .inner-bg {
+    display: flex;
+    padding: 13px 0px 40px !important;
+    flex-direction: column;
+}
+
+
+.overlay-com.ice-join .inner.mobile .inner-bg .top-level {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.overlay-com.ice-join .inner.mobile .inner-bg .top-level .brand-logo {
+    padding-left: 27px;
+}
+
+.overlay-com.ice-join .inner.mobile .inner-bg .top-level .brand-logo img {
+    width: 133px;
+}
+
+.overlay-com.ice-join .inner.mobile .inner-bg .top-level .close-mobile-button {
+    height: 24px;
+    width: 24px;
+    background-image: url("/images/close-mobile-button.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.overlay-com.ice-join .inner.mobile .inner-bg .join-block {
+    float: left;
+    position: relative;
+    text-align: center;
+    padding-top: 61px;
+}
+
+.overlay-com.ice-join .inner.mobile .inner-bg .join-block h3 {
+    color: #fff;
+    text-align: center;
+    float: left;
+    position: relative;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 29px;
+    margin: 0px;
+    font-family: "Lato", sans-serif;
+    letter-spacing: 0.01em;
+    padding: 0px 60px 22px;
+}
+
+.overlay-com.ice-join .inner.mobile .inner-bg .join-block span {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.overlay-com.ice-join .inner.mobile .inner-bg .join-block h3 .ice-logo-inline {
+    background-image: url("/images/ice-logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    margin-bottom: -5px;
+}
+
+.overlay-com.ice-join .inner.mobile .inner-bg .join-block p {
+    float: left;
+    position: relative;
+    text-align: center;
+    padding: 0px 30px;
+    margin: 0px;
+    color: #fff;
+    font-family: "Euclid Circular Light";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+}
+
+.overlay-com.ice-join .inner.mobile .looper-bg {
+    float: left;
+    position: absolute;
+    background-image: url(/images/looper-bg.png);
+    background-position: -12px -25px;
+    background-repeat: no-repeat;
+    background-size: 120%;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.4;
+}
+
+.overlay-com.ice-join .inner.mobile .inner-bg .app-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 42px;
+}
+
+
+.overlay-com.ice-join .inner.mobile .inner-bg .app-block .app-mockup {
+    display: flex;
+    justify-content: center;
+}
+
+.overlay-com.ice-join .inner.mobile .inner-bg .app-block .app-mockup img {
+    max-width: 261px;
+}
+
+.overlay-com.ice-join .inner.mobile .inner-bg .app-block .app-links {
+    display: flex;
+    flex-direction: row;
+    padding-top: 16px;
+    justify-content: center;
+}
+
+.overlay-com.ice-join .inner.mobile .inner-bg .app-block .app-links .appstore {
+    display: flex;
+    background-image: url("/images/appstore-logo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 120px;
+    height: 40px;
+    margin-right: 18px;
+}
+
+.overlay-com.ice-join .inner.mobile .inner-bg .app-block .app-links .googleplay {
+    display: flex;
+    background-image: url("/images/google-play-logo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 120px;
+    height: 40px;
+}
+
+.overlay-com.ice-join .inner.mobile .inner-bg .signup-info-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.overlay-com.ice-join .inner.mobile .inner-bg .signup-info-block {
+    padding-top: 38px;
+}
+
+.overlay-com.ice-join .inner.mobile .inner-bg .signup-info-block h3 {
+    text-align: center;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 32px;
+    padding: 0px 40px 21px;
+    margin: 0px;
+    font-family: "Lato", sans-serif;
+    font-weight: 800;
+    letter-spacing: 0.01em;
+}
+
+.overlay-com.ice-join .inner.mobile .inner-bg .signup-info-block
+h3
+.ice-logo-inline {
+    background-image: url("/images/ice-logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    margin-bottom: -4px;
+}
+
+.overlay-com.ice-join .inner.mobile .inner-bg .signup-info-block h3 span {
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.01em;
+}
+
+.overlay-com.ice-join .inner.mobile .inner-bg .signup-info-block .coupon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.overlay-com.ice-join .inner.mobile .inner-bg .signup-info-block
+.coupon
+.coupon-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay-com.ice-join .inner.mobile .inner-bg .signup-info-block
+.coupon
+.coupon-info
+.coupon-input {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    max-width: 316px;
+    padding: 12px 19px;
+    background-color: #ffffff;
+    border-radius: 8.77px;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.overlay-com.ice-join .inner.mobile .inner-bg .signup-info-block
+.coupon
+.coupon-info
+.coupon-input
+.coupon-text {
+    color: #0a2155;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+}
+
+.overlay-com.ice-join .inner.mobile .inner-bg .signup-info-block
+.coupon
+.coupon-info
+.coupon-input
+.icon-tooltip
+.icon-copy {
+    display: inline-block;
+    width: 12px;
+    height: 16px;
+    background-image: url("/images/copy-icon.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.overlay-com.ice-join .inner.mobile .inner-bg .signup-info-block
+.coupon
+.coupon-info
+.coupon-input
+.icon-tooltip {
+    display: flex;
+    cursor: pointer;
+}
+
+.overlay-com.ice-join .inner.mobile .inner-bg .signup-info-block
+.coupon
+.coupon-info
+.coupon-input
+.icon-tooltip
+span {
+    display: inline-block;
+    color: #535353;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    font-family: "Lato", sans-serif;
+    padding-right: 9px;
+}
+
+.overlay-com.ice-join .inner.mobile .inner-bg .signup-info-block
+.coupon
+.coupon-support {
+    font-family: "Euclid Circular Light";
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #ffffff;
+    padding-top: 11.88px;
+    letter-spacing: 0.01em;
+    display: flex;
+    justify-content: center;
+}
+
+.overlay-com.ice-join .inner.mobile .inner-bg .signup-info-block
+.coupon
+.coupon-support div {
+    background-image: url("/images/hand-icon.png");
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    padding-left: 23px;
+    padding-top: 3px;
+    background-size: 18px 18px;
+    display: flex;
+    height: 18px;
+}
+
+.overlay-com.ice-join .inner.mobile .inner-bg .buttons-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 39.57px;
+    padding-bottom: 42px;
+}
+
+.overlay-com.ice-join .inner.mobile .inner-bg
+.buttons-list
+.button-more {
+    display: flex;
+    padding: 12px 0px;
+    color: #ffffff;
+    background-color: #0a2155;
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17.75px;
+    border-radius: 7px;
+    margin-right: 13px;
+    letter-spacing: 0.01em;
+    width: 165px;
+    max-width: 165px;
+    height: 18px;
+    justify-content: center;
+}
+
+.overlay-com.ice-join .inner.mobile .inner-bg
+.buttons-list
+.button-whitepaper {
+    display: flex;
+    padding: 12px 0px;
+    color: #0a2155;
+    background-color: #ffffff;
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17.75px;
+    border-radius: 7px;
+    letter-spacing: 0.01em;
+    width: 165px;
+    height: 18px;
+    max-width: 165px;
+    justify-content: center;
+}
+
+
+.back-link a {
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #fff;
+    text-decoration: none;
+    background-image: url("/images/back-button-arrow.png");
+    padding-left: 20px;
+    background-position: left center;
+    background-size: 10px 10px;
+    background-repeat: no-repeat;
+}
+
+
+
+/*    mobile breakpoint*/
+@media only screen and (max-width: 555px) {
+    .overlay-com.ice-join .inner {
+        display: none;
+    }
+
+    .overlay-on {
+        overflow: auto !important;
+    }
+
+    .overlay-com.ice-join .inner.mobile {
+        display: flex;
+        max-width: 375px;
+    }
+
+    .overlay-com {
+        position: absolute;
+    }
+
+    .back-link {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 556px) {
+    .overlay-com.ice-join .inner {
+        width: 90%;
+    }
+    .overlay-com.ice-join .inner .inner-bg {
+        padding: 40px;
+    }
+
+    .overlay-com.ice-join .inner .inner-bg .modal-info {
+        padding-top: 40px;
+    }
+
+    .overlay-com.ice-join .inner .inner-bg .modal-info .base-info {
+        padding-right: 20px;
+    }
+
+    .overlay-com.ice-join .inner .inner-bg .modal-info .signup-info {
+        padding-right: 20px;
+    }
+
+    .overlay-com.ice-join .inner .inner-bg .modal-info .logos {
+        font-family: "Coco-Sharp-Bold-trial";
+        font-size: 36px !important;
+        line-height: 40px !important;
+        font-weight: 400;
+    }
+
+    .overlay-com.ice-join .inner .inner-bg .modal-info .logos a {
+        font-family: "Coco-Sharp-Bold-trial";
+        font-size: 36px !important;
+        line-height: 40px !important;
+        font-weight: 400;
+    }
+
+    .overlay-com.ice-join .inner .inner-bg .modal-info .base-info h3 {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .overlay-com.ice-join .inner .inner-bg .modal-info p {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        max-width: 421px;
+    }
+
+    .overlay-com.ice-join .inner .inner-bg .modal-info .signup-info h4 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .overlay-com.ice-join .inner .inner-bg .modal-info .signup-info h3 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .brand-logo {
+        height: 24px !important;
+        margin-bottom: 0px !important;
+    }
+
+    .overlay-com.ice-join .inner .inner-bg .modal-info .logos .ice-logo i {
+        height: 24px;
+        width: 24px;
+        display: inline-block;
+        margin-bottom: 0px !important;
+    }
+
+    .overlay-com.ice-join .inner .inner-bg .modal-info .signup-info h3 .ice-logo-inline {
+        margin-bottom: -6px;
+    }
+
+
+}
