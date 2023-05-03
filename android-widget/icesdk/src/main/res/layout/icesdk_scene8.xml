@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:src="@drawable/icesdk_gradient_top"
+        app:layout_constraintBottom_toTopOf="@id/icesdk_quote"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_loopergroup_footer"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="300dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/icesdk_trapezoid"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@id/icesdk_app_screens"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_loopergroup_footer"
+        app:layout_constraintTop_toTopOf="@id/icesdk_download_app"
+        />
+
+    <include
+        android:id="@+id/icesdk_header"
+        layout="@layout/icesdk_part_header_with_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <fragment
+        android:id="@+id/icesdk_subheader"
+        class="icesdk.SubHeaderFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@id/icesdk_header"
+        tools:layout="@layout/icesdk_part_sub_header"
+        tools:layout_editor_absoluteX="0dp"
+        />
+
+    <include
+        android:id="@+id/icesdk_quote"
+        layout="@layout/icesdk_part_quote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/icesdk_subheader"
+        />
+
+    <fragment
+        android:id="@+id/icesdk_accept"
+        class="icesdk.FeaturesFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/icesdk_quote"
+        tools:layout="@layout/icesdk_part_features"
+        />
+
+    <fragment
+        android:id="@+id/icesdk_app_screens"
+        class="icesdk.AppScreensFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/icesdk_accept"
+        tools:layout="@layout/icesdk_part_app_screens"
+        />
+
+    <include
+        android:id="@+id/icesdk_download_app"
+        layout="@layout/icesdk_part_footer_download_the_app"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/icesdk_app_screens"
+        />
+
+    <fragment
+        android:id="@+id/icesdk_footer"
+        class="icesdk.FooterInviteFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/icesdk_download_app"
+        tools:layout="@layout/icesdk_part_footer_invite_copy"
+        />
+
+    <fragment
+        android:id="@+id/icesdk_to_top"
+        class="icesdk.FooterToTopFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/icesdk_footer"
+        tools:layout="@layout/icesdk_part_footer_to_top"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

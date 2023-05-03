@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="icesdk_blue">#2B5BE3</color>
+    <color name="icesdk_dark_blue">#0D265E</color>
+    <color name="icesdk_some_blue">#224ECB</color>
+    <color name="icesdk_dots">#D9D9D9</color>
+</resources>

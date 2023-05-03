@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ScrollView
+        android:id="@+id/icesdk_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ViewStub
+            android:id="@+id/icesdk_stub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <!--        <include layout="@layout/icesdk_scene4" />-->
+
+    </ScrollView>
+
+    <include
+        android:id="@+id/icesdk_download_bar"
+        layout="@layout/icesdk_download"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="16dp"
+        />
+</FrameLayout>

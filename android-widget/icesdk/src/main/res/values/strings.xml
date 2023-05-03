@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="icesdk_quite_symbol" translatable="false">\"</string>
+    <string name="icesdk_follow_us"><u>Follow us</u></string>
+    <string name="icesdk_join_us"><u>Join us</u></string>
+    <string name="icesdk_keep_track_telegram">Keep track with the latest news on our Telegram channel</string>
+    <string name="icesdk_join_our_github">Join our fast-growing community of open-source developers on GitHub.</string>
+    <string name="icesdk_go_back_to_app">Go back to app</string>
+    <string name="icesdk_text_copied">Text copied</string>
+    <string name="icesdk_copied">Copied</string>
+    <string name="icesdk_target_app" translatable="false" />
+    <string name="icesdk_get_started">Get Started</string>
+    <string name="icesdk_download">Download</string>
+    <string name="icesdk_join_the_community">Join the community</string>
+    <string name="icesdk_available_worldwide">Available worldwide</string>
+    <string name="icesdk_anyone_from_anywhere">Anyone from anywhere in the world with an Android or iOS device can join ice.</string>
+    <string name="icesdk_no_battery_drain">No battery drain</string>
+    <string name="icesdk_we_don_t_use_any_phone_resources">We don’t use any phone resources or hardware, having no impact on battery or network.</string>
+    <string name="icesdk_community_based">Community-based</string>
+    <string name="icesdk_growing_up_your_team_builds">Growing up your team builds trust across the network, and increases earnings for everybody.</string>
+    <string name="icesdk_decentralized">Decentralized</string>
+    <string name="icesdk_everything_that_we_develop">Everything that we develop is run by the Decentralized Autonomous Organization (DAO).</string>
+    <string name="icesdk_free_to_mine">Free to mine</string>
+    <string name="icesdk_no_more_mining_dificulty">No more mining difficulty or hidden fees. Anyone can mine with just a mobile phone.</string>
+    <string name="icesdk_transparent">Transparent</string>
+    <string name="icesdk_we_are_a_100_open_source">We are a 100% open-source project, so you can easily keep track of our development.</string>
+    <string name="icesdk_you_are_free_to_accept_or_refuse">You are free to accept or refuse the invitation</string>
+    <string name="icesdk_have_you_ever_felt">Have you ever felt that you are locked in the cage, that you no longer have the freedom to do whatever you want?</string>
+    <string name="icesdk_freedom">Freedom</string>
+    <string name="icesdk_enjoy_global_freedom">Enjoy global freedom</string>
+    <string name="icesdk_do_you_feel_like_a_slave">Do you feel like a slave of the current financial system? Like you have no control over your life?</string>
+    <string name="icesdk_take_action">Take Action!</string>
+    <string name="icesdk_claim_your_financial_freedom">Claim your financial freedom</string>
+    <string name="icesdk_do_you_want_to_make_your_own_decisions">Do you want to make your own decisions and be part of a decentralized platform where you can express yourself freely?</string>
+    <string name="icesdk_dao">DAO</string>
+    <string name="icesdk_decentralized_autonomous_organization">Decentralized Autonomous Organization</string>
+    <string name="icesdk_the_power_of_the_community">The power of the community</string>
+    <string name="icesdk_invite_your_friends_and_join_the_ice_network">Invite your friends and join the ice network</string>
+    <string name="icesdk_your_team_your_trust_your_success">Your team. Your trust. Your success.</string>
+    <string name="icesdk_since_the_ice_network_is_based_on_trust">Since the ice network is based on trust, we recommend inviting your friends so that you can all enjoy a 25% bonus on the base mining rate.</string>
+    <string name="icesdk_join_ice_today">Join ice today</string>
+    <string name="icesdk_the_global_currency_reset">The global currency reset</string>
+    <string name="icesdk_get_your_welcome_nreward_today">Get your welcome reward today</string>
+    <string name="icesdk_download_now">Download now</string>
+    <string name="icesdk_download_the_app_reward">Download the app and get your welcome reward today</string>
+    <string name="icesdk_sign_up_with_our_code">Sign up with our code and receive 10 [[ice]]ice coins</string>
+    <string name="icesdk_copy">Copy</string>
+    <string name="icesdk_use_this_invitation_code">Use this invitation code when you create the account</string>
+    <string name="icesdk_follow_us_on_twitter">Follow us on Twitter</string>
+    <string name="icesdk_join_us_on_telegram">Join us on Telegram</string>
+    <string name="icesdk_you_are_invited_nto_ice_ice">You are invited to [[ice]]ice</string>
+    <string name="icesdk_we_are_excited_to_announce">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
+    <string name="icesdk_team">App_name Team</string>
+    <string name="icesdk_sign_up_today">Sign up today</string>
+    <string name="icesdk_use_our_code_to_nreceive">Use our code to receive 10 [[ice]] ice coins</string>
+    <string name="icesdk_use_our_invitation_code">Use our invitation code when you create the account.</string>
+</resources>
