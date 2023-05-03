@@ -53,7 +53,6 @@ This is a simple example of the implementation.
 <body class="body">
 <div id="container"></div>
 <script>
-
     initWidget('container', 'https://yourWebsite.com/logo.png', 'newBrand', 'en')
 </script>
 </body>
