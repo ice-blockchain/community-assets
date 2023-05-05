@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+    android:theme="@style/Icesdk.Theme.Light"
+    tools:background="@color/icesdk_blue"
+    >
+
+    <TextView
+        android:id="@+id/icesdk_textview4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/icesdk_join_ice_today"
+        android:textAppearance="@style/Icesdk.H6"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/icesdk_textview5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="64dp"
+        android:gravity="center"
+        android:text="@string/icesdk_the_global_currency_reset"
+        android:textAppearance="@style/Icesdk.H2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/icesdk_textview4"
+        />
+
+    <icesdk.StaticViewPager
+        android:id="@+id/icesdk_features_pager"
+        android:layout_width="250dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="73dp"
+        android:layout_marginTop="40dp"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:minHeight="280dp"
+        app:layout_constraintDimensionRatio="w,230:280"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/icesdk_textview5"
+        >
+
+        <include layout="@layout/icesdk_feature_free" />
+
+        <include layout="@layout/icesdk_feature_av" />
+
+        <include layout="@layout/icesdk_feature_battery" />
+
+        <include layout="@layout/icesdk_feature_comm" />
+
+        <include layout="@layout/icesdk_feature_dec" />
+
+        <include layout="@layout/icesdk_feature_trans" />
+    </icesdk.StaticViewPager>
+
+    <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+        android:id="@+id/icesdk_dots_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        app:dotsColor="@color/icesdk_dots"
+        app:dotsCornerRadius="8dp"
+        app:dotsSize="8dp"
+        app:dotsSpacing="4dp"
+        app:dotsWidthFactor="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/icesdk_features_pager"
+        app:selectedDotColor="?colorOnPrimary"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

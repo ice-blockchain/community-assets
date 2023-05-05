@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">icesdk</string>
+    <string name="icesdk_promo_code_value">invitation_code</string>
+</resources>
