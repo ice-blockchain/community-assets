@@ -30,7 +30,7 @@ render() {
 }
 ```
 ## Props
-**Prop | Type | Default | Description**
+Prop | Type | Default | Description
 |--- |--- |--- |---
 visible | boolean | REQUIRED | show/hide modal | 
 appLogo | image | dummy image | your app logo | 
