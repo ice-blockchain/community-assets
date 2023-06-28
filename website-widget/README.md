@@ -16,7 +16,7 @@ The widget automatically translates into multiple languages depending on the bro
 Add the bellow code into the website `<head>` section.
 
 ```
-<script src="<server>/external.js"></script>
+<script src="https://ice-production.b-cdn.net/website-widget/external.js"></script>
 ```
 
 #### 2. Create widget container
@@ -48,7 +48,7 @@ This is a simple example of the implementation.
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
     <title>ice: Decentralized Future</title>
-    <script src="<server>/external.js"></script>
+    <script src="https://ice-production.b-cdn.net/website-widget/external.js"></script>
 </head>
 <body class="body">
 <div id="container"></div>
@@ -74,3 +74,11 @@ Please set the **host** const in `external.js` to your domain.
 ```
 const host = 'https://example.com'
 ```
+
+#### 3. Update script link
+You need to update your script URL to where you host it.
+
+```
+<script src="https://YOUR_WEBSITE_URL/external.js"></script>
+```
+
