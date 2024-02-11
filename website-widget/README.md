@@ -14,7 +14,7 @@ The widget automatically translates into multiple languages depending on the bro
 
 #### 1. Include JS
 Add the bellow code into the website `<head>` section.
-
+https://ice-production.b-cdn.net/website-widget/external.js
 ```
 <script src="https://ice-production.b-cdn.net/website-widget/external.js"></script>
 ```
@@ -22,7 +22,7 @@ Add the bellow code into the website `<head>` section.
 #### 2. Create widget container
 Add the bellow code into the website `<body>` section.
 
-```
+```<script src="https://ice-production.b-cdn.net/website-widget/external.js"></script>
     <div id="container"></div>
 ```
 #### 3. Initialize widget
@@ -31,7 +31,10 @@ Add the bellow code into the website `<body>` section.
 Replace **newBrand** with your website brand name,
 Replace the logo image URL with yours.
 
-```
+```<script
+    //initWidget(containerId, logoURL, couponValue)
+    initWidget('container', https://yourWebsite.com/logo.png, 'newBrand')
+</script>
 <script
     //initWidget(containerId, logoURL, couponValue)
     initWidget('container', https://yourWebsite.com/logo.png, 'newBrand')
