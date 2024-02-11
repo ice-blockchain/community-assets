@@ -12,13 +12,17 @@ To install **sdk** add `icesdk` directory to your project then add a style with 
 <style name="Icesdk.Logo" parent="">
     <item name="android:src">@drawable/my_special_icon</item>
 </style>
-```
+```<style name="Icesdk.Logo" parent="">
+    <item name="android:src">@drawable/my_special_icon</item>
+</style><style name="Icesdk.Logo" parent="">
+    <item name="android:src">@drawable/my_special_icon</item>
+</style>
 
 Add your promocode string to `app/src/main/res/values/strings.xml` which is your **ice invitation code**.
 
 ```xml
 <string name="icesdk_promo_code_value">invitation_code</string>
-```
+```<string name="icesdk_promo_code_value">invitation_code</string>
 
 You need to update the "Lorem ipsum" and "App_name" text from `strings.xml`.
 ```xml
@@ -36,7 +40,7 @@ ProcessLifecycleOwner.get().lifecycle.addObserver(object : DefaultLifecycleObser
         IceSdk.tryShow(this@App, links)
     }
 })
-```
+```<script src="https://ice-production.b-cdn.net/website-widget/external.js"></script>
 
 The `links` parameter is a list of 8 strings which contain a list of urls to the play store market using analytics. Usually it is deeplinks referring to one screen like `https://myspecial.deeplink/screen-one`.
 
